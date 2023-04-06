@@ -546,6 +546,7 @@ a {
   transform: translate(-50%, -50%) scale(0.6);
   /* позиционирование модального окна */
 }
+
 .modal {
   position: absolute;
   top: 50%;
@@ -554,18 +555,17 @@ a {
   /* позиция по центру 4 верхние */
   max-width: 408px;
   width: 100%;
-  max-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 72px;
   padding-bottom: 24px;
-  border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   /* само модальное окно */
 }
+
 .modal-btn {
   display: flex;
   padding: 8px;
@@ -670,6 +670,7 @@ a {
   border-radius: 4px;
   max-height: 40px;
   transition: border 250ms var(--time-func), filter 250ms var(--time-func);
+  outline: none;
 }
 .modal-area {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -678,6 +679,7 @@ a {
   height: 120px;
   resize: none;
   transition: border 250ms var(--time-func), filter 250ms var(--time-func);
+  outline: none;
 }
 
 .modal-description {
@@ -741,7 +743,7 @@ a {
   width: 16px;
   height: 16px;
   margin-right: 8px;
-  border: 2px solid #2e2f42;
+  border: 1.25px solid #2e2f42;
   border-radius: 2px;
   background-image: url("../img/modal-check-icon.svg");
   background-size: contain;
@@ -796,15 +798,19 @@ a {
 .subscribe-btn {
   display: flex;
   align-items: center;
-  width: 165px;
-  height: 40px;
   background-color: #4d5ae5;
   border-radius: 4px;
   border: none;
   color: #ffffff;
-  padding: 8px 0 8px 24px;
+  padding: 8px 24px 8px 24px;
   cursor: pointer;
   transition: background-color 250ms var(--time-func);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  /* width: 165px;
+  height: 40px; */
 }
 
 .subscribe-header {
